@@ -24,7 +24,7 @@ jobs:
 
       # 项目只保留了 Dart 代码，安卓壳工程在 CI 里生成
       - name: 生成 Android 壳工程
-        run: flutter create --platforms=android --org com.demo .
+        run: flutter create --project-name drel_app --platforms=android --org com.demo .
 
       - run: flutter pub get
       - run: flutter analyze --no-fatal-infos
