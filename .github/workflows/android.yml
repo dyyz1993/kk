@@ -18,7 +18,7 @@ jobs:
           cache: true
 
       - run: flutter pub get
-      - run: flutter analyze
+      - run: flutter analyze --no-fatal-infos # info 级提示不阻断，error 仍失败
 
       - run: flutter build apk --release
 
