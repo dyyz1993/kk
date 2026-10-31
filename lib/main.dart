@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 
 void main() {
   final isEditor = Uri.base.toString().contains('editor');
-  runApp(RemoteDeskApp(initialRoute: isEditor ? '/editor' : '/'));
+  runApp(KkApp(initialRoute: isEditor ? '/editor' : '/'));
 }
 
-class RemoteDeskApp extends StatelessWidget {
+class KkApp extends StatelessWidget {
   final String initialRoute;
-  const RemoteDeskApp({super.key, required this.initialRoute});
+  const KkApp({super.key, required this.initialRoute});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'RemoteDesk · 我的电脑',
+      title: 'KK · 我的电脑',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
