@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 
 void main() {
   final isEditor = Uri.base.toString().contains('editor');
-  runApp(DrelApp(initialRoute: isEditor ? '/editor' : '/'));
+  runApp(RemoteDeskApp(initialRoute: isEditor ? '/editor' : '/'));
 }
 
-class DrelApp extends StatelessWidget {
+class RemoteDeskApp extends StatelessWidget {
   final String initialRoute;
-  const DrelApp({super.key, required this.initialRoute});
+  const RemoteDeskApp({super.key, required this.initialRoute});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Drel · 我的电脑',
+      title: 'RemoteDesk · 我的电脑',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,

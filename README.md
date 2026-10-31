@@ -1,6 +1,6 @@
-# Drel · 我的电脑
+# RemoteDesk
 
-手机远程连接并控制 Mac 的 Flutter 应用（根据 Figma 设计稿「Drel · Tongbuview v20」还原）。
+RemoteDesk · 手机远程连接并控制 Mac 的 Flutter 应用（根据 Figma 设计稿「Drel · Tongbuview v20」还原）。
 
 ## 功能
 - 设备列表页：搜索、设备卡片（在线状态、示意画面）
